@@ -18,6 +18,55 @@ body {
 
 section {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+  section {
+    padding: 1rem;
+  }
+  
+  #hero {
+    padding: 2rem 1rem;
+  }
+  
+  #projects .project {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #projects .project {
+    flex: 1 1 calc(50% - 1rem);
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1024px) {
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #projects .project {
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+  }
 }
 
 #hero {
