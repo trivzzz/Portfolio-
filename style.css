@@ -3,9 +3,17 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  overflow-x: hidden;
-  
-} @media (min-width: 768px) {
+  overflow-x: auto;
+  overflow-y: auto;
+} 
+
+.projects-grid{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+}@media (min-width: 768px) {
   body {
     font-size: 18px;
   }
@@ -24,9 +32,12 @@ section {
 
 
 @media (max-width: 767px) {
-  section {
-    padding: 1rem;
+  .projects-grid {
+    flex-direction: column; 
+    align-items: center;
   }
+}
+
   
   #hero {
     padding: 2rem 1rem;
